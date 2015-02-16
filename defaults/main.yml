@@ -1,0 +1,5 @@
+---
+snmpd_secret: public
+snmpd_cidr: 0.0.0.0/0
+snmpd_location: Unknown
+snmpd_contact: Anonymous

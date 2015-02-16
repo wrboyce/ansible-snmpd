@@ -1,0 +1,12 @@
+# {{ ansible_managed }}
+
+agentAddress udp:161,udp6:[::1]:161
+
+rocommunity {{ snmpd_secret }} {{ snmpd_cidr }}
+rocommunity public localhost
+
+sysLocation {{ snmpd_location }}
+sysContact {{ snmpd_contact }}
+
+defaultMonitors yes
+linkUpDownNotifications yes
