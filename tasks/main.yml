@@ -8,4 +8,4 @@
     - restart snmpd
 
 - name: ensure snmpd is enabled and running
-  service: name=snmpd enabled=yes state=running
+  service: name=snmpd enabled=yes state=started
