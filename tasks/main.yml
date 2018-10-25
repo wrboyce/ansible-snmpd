@@ -1,6 +1,6 @@
 ---
 - name: ensure snmpd is installed
-  apt: pkg=snmpd state=installed
+  apt: pkg=snmpd state=present
 
 - name: configure snmpd
   template: src=snmpd.conf.j2 dest=/etc/snmp/snmpd.conf
